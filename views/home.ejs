@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/style">
+<head>
+    <title>Ayesha's Assignemnt 1</title>
+    <style>
+        .pane{
+            background-color: rgb(198, 191, 191);
+        }
+        body{
+            background-color: rgb(210, 181, 236);
+            border-style: double;
+            text-align: center;
+            padding: 30px;
+        }
+        p{
+            text-align: center;
+            background-color: rgb(230, 187, 187)
+        }
+        h1{
+            text-align: center;
+            color: rgb(67, 133, 67);
+        }
+        .books{
+            text-align: center;
+            padding: 30px;
+        }
+    </style> 
+</head>
+</br>
+<h1>Click on any Book to see the details</h1>
+<body>
+
+    <div class = "books">
+    <% let i = 0 %>
+    <% data.forEach (data => {%>
+        <% i++ %>
+        <tr>
+        <td><a href="<%=`/book/${data._id}` %>"><%= data.name%></a></td>
+        </tr>
+    <% }); %>
+    </div>
+
+</br>
+<div class="pane">
+        <%- include('partials/navpane') %>
+    </div>
+</div>
+</body>
+</html>

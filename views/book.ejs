@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>book page</title>
+    <style>
+        .pane{
+            background-color: rgb(198, 191, 191);
+        }
+        body{
+            background-color: rgb(210, 181, 236);
+            border-style: double;
+            text-align: center;
+            padding: 30px;
+        }
+        p{
+            text-align: center;
+            background-color: rgb(230, 187, 187)
+        }
+        h1{
+            text-align: center;
+            color: rgb(67, 133, 67);
+        }
+        .books{
+            text-align: center;
+            padding: 30px;
+        }
+    </style> 
+</head>
+<h1>Click on any Book to see the details</h1>
+<body>
+    <div class = "books">
+        <b>Book Title:</b>
+            <%= data.name%> 
+        </br>Author:
+            <%= data.author%>
+        </br>
+            Buy now: <a href="<%= data.link%>">Link</a>
+        </p></a>
+    </div>
+</br>
+</body>
+</br>
+<div class="pane">
+        <%- include('partials/navpane') %>
+    </div>
+</div>
+</html>

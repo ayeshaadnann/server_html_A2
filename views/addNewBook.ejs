@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>addNewBook</title>
+    <link rel="stylesheet" href="/style">
+    <style>
+        .pane{
+            background-color: rgb(198, 191, 191);
+        }
+        body{
+            background-color: rgb(210, 181, 236);
+            border-style: double;
+            text-align: center;
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(67, 133, 67);
+        }
+    </style> 
+</head>
+<body>
+    <div class="data-form">
+        <form action="../new_books/create" method="POST">
+            <h2>Add a new book:</h2>
+            <label for="name">Book Name:</label><br>
+            <input type="text" name="name"><br><br>
+            <label for="author">Author Name:</label><br>
+            <input type="text" name="author"><br><br>
+            <label for="link">Amazon Link:</label><br>
+            <input type="text" name="link"><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+    </div>
+    <div class="pane">
+        <%- include('partials/navpane') %>
+    </div>
+</body>
+</html>
